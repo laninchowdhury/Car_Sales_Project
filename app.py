@@ -5,7 +5,7 @@ import altair as alt
 import os
 
 
-df = pd.read_csv(r"C:\Users\nsuka\Desktop\Car_Sales_Project\vehicles_us.csv")
+df = pd.read_csv(r"C:\Users\nsuka\Desktop\Project\Car_Sales_Project\vehicles_us.csv")
 df.head()
 
 
