@@ -4,8 +4,22 @@ import plotly.express as px
 import altair as alt
 import os
 
+from pathlib import Path
 
-df = pd.read_csv(r"C:\Users\nsuka\Desktop\Project\Car_Sales_Project\vehicles_us.csv")
+
+file_path = Path('vehicles_us.csv')
+
+if file_path.exists():
+    df = pd.read_csv(file_path)
+    print("File loaded successfully!")
+else:
+    print("File does NOT exist.")
+
+file_path = Path("C:/Users/nsuka/Desktop/Project/Car_Sales_Project/vehicles_us.csv")
+df = pd.read_csv(file_path)
+
+
+
 df.head()
 
 
