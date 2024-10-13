@@ -4,8 +4,7 @@ import plotly.express as px
 import altair as alt
 import os
 
-df =pd.read_csv("C:\\Users\\nsuka\\Desktop\\Project\\Car_Sales_Project\\vehicles_us.csv")
-
+df = pd.read_csv("vehicles_us.csv")
 
 df.head()
 
